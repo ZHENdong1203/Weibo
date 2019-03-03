@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bg">#f1e3e4</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#FFFFEE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text">#333333</color>
+    <color name="body1">#FFFFFF</color>
+    <color name="body2">#F9F9F9</color>
+    <color name="menu1">#EEEEEE</color>
+    <color name="menu2">#BBBBBB</color>
+    <color name="divider1">#DDDDDD</color>
+    <color name="divider2">#EEEEEE</color>
+    <color name="divider3">#FFFFFF</color>
+    <color name="loading">#99000000</color>
+    <color name="login_line_color">#dededf</color>
+    <color name="text_secondary_color">#9d9d9d</color>
+    <color name="black_alpha_128">#80000000</color>
+    <color name="login_input_active">#31b968</color>
+    <color name="account_input_bg_color">#33ffffff</color>
+    <color name="account_pressed_true">#14b94d</color>
+    <color name="account_lock_bg">#ff43815c</color>
+    <color name="account_lock_font_color">#FF68997C</color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/code_back_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:id="@+id/code_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@id/code_back_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="#1296db"
+            android:text="生成我的二维码"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="输入用户名"
+        android:id="@+id/code_name"
+        />
+
+    <Button
+        android:id="@+id/encodeBtnWithLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成带Logo的二维码" />
+
+
+    <ImageView
+        android:id="@+id/contentIvWithLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/encodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码" />
+
+
+    <ImageView
+        android:id="@+id/contentIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

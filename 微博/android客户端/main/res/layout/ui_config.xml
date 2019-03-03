@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_layout" />
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/config_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="7dp"
+        android:textSize="20sp"
+        android:textColor="#1296db"
+        android:textStyle="bold"
+        android:text="个人中心"/>
+	<ScrollView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:scrollbars="vertical" 
+	    android:layout_weight="1"
+	    android:fillViewport="true">
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<include layout="@layout/tpl_list_info" />
+			<ListView 
+				android:id="@+id/app_config_list_main" 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:background="@drawable/xml_list_config_bg"
+				android:descendantFocusability="blocksDescendants"
+				android:divider="@color/divider1" 
+				android:dividerHeight="1dp"
+				android:listSelector="@drawable/xml_list_bg"/>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:paddingRight="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:paddingTop="1dp"
+				android:paddingBottom="1dp"
+				android:gravity="center_vertical"
+				android:background="@drawable/xml_list_menu_bg"
+				android:focusable="false">
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/code"/>
+				<TextView
+					android:id="@+id/QRcode"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginRight="5dp"
+					android:layout_marginLeft="5dp"
+					android:textSize="20sp"
+					android:text="生成我的二维码"
+					android:gravity="center_vertical"
+					android:layout_weight="1"
+					android:focusable="false" />
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="50dp"
+					android:layout_margin="5dp"
+					android:layout_alignParentRight="true"
+					android:background="@drawable/arrow_1"
+					android:focusable="false" />
+			</LinearLayout>
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:paddingRight="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:paddingTop="1dp"
+				android:paddingBottom="1dp"
+				android:gravity="center_vertical"
+				android:background="@drawable/xml_list_menu_bg"
+				android:focusable="false">
+				<ImageView
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"
+					android:src="@drawable/about"/>
+				<TextView
+					android:id="@+id/About"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginRight="5dp"
+					android:layout_marginLeft="5dp"
+					android:textSize="20sp"
+					android:text="关于"
+					android:gravity="center_vertical"
+					android:layout_weight="1"
+					android:focusable="false" />
+				<Button
+					android:layout_width="40dp"
+					android:layout_height="50dp"
+					android:layout_margin="5dp"
+					android:layout_alignParentRight="true"
+					android:background="@drawable/arrow_1"
+					android:focusable="false" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<include layout="@layout/main_tab" />
+</LinearLayout>
+</merge>

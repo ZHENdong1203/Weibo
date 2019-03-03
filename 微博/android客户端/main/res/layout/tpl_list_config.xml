@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="50dp"
+	android:paddingRight="10dp"
+	android:paddingLeft="10dp"
+	android:paddingTop="1dp"
+	android:paddingBottom="1dp"
+	android:gravity="center_vertical"
+	android:background="@drawable/xml_list_config_bg"
+	android:focusable="false">
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:focusable="false">
+		<TextView
+			android:id="@+id/tpl_list_config_text_name"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="8sp"
+			android:gravity="center_vertical"
+			android:focusable="false" />
+		<TextView
+			android:text=" : "
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="8sp"
+			android:gravity="center_vertical"
+			android:focusable="false" />
+		<TextView
+			android:id="@+id/tpl_list_config_text_value"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="8sp"
+			android:gravity="center_vertical"
+			android:focusable="false" />
+	</LinearLayout>
+	<Button
+		android:layout_width="24dp"
+		android:layout_marginTop="8dp"
+		android:layout_height="31dp"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/arrow_1"
+		android:focusable="false" />
+</RelativeLayout>

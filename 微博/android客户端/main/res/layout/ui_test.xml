@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_layout" />
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp">
+		<ImageButton
+			android:id="@+id/test_back"
+			android:layout_width="40dp"
+			android:background="#fff"
+			android:layout_height="40dp"
+			android:src="@drawable/back"/>
+		<TextView
+			android:id="@+id/test_top"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:padding="7dp"
+			android:textSize="20sp"
+			android:textColor="#1296db"
+			android:textStyle="bold"
+			android:text="性能测试"/>
+
+	</RelativeLayout>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:paddingLeft="5dp"
+		android:paddingTop="5dp"
+		android:gravity="center_vertical"
+		android:textStyle="bold"
+		android:text="Performance Tests :" />
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/app_test_btn_test_array" 
+		android:text="Test Array" />
+	<Button
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/app_test_btn_test_array_list" 
+		android:text="Test Array List" />
+</LinearLayout>
+</merge>

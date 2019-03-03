@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_layout" />
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<include layout="@layout/main_top" />
+	<RelativeLayout
+		android:id="@+id/weather_top_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp">
+		<TextView
+			android:id="@+id/weather_city"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:text="城市:长沙"
+			android:textSize="15sp"/>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true">
+			<TextView
+				android:id="@+id/weather_temp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:text="温度："
+				android:textSize="15sp"/>
+			<TextView
+				android:id="@+id/weather_temp_count"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/weather_temp"
+				android:text="" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/weather_temp_count"
+				android:text="℃"/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp">
+			<TextView
+				android:id="@+id/weather_wea"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/weather_wea_count"
+				android:text="天气:"/>
+			<TextView
+				android:id="@+id/weather_wea_count"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:text=""
+				/>
+		</LinearLayout>
+	</RelativeLayout>
+	<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" 
+		android:layout_weight="1">
+		<ListView 
+			android:id="@+id/app_index_list_view" 
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" 
+			android:descendantFocusability="blocksDescendants"
+			android:fadingEdge="vertical" 
+			android:fadingEdgeLength="5dp"
+			android:divider="@null"
+			android:listSelector="@drawable/xml_list_bg" 
+			android:cacheColorHint="#00000000" />
+	</LinearLayout>
+	<include layout="@layout/main_tab" />
+</LinearLayout>
+</merge>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_layout" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal"
+			android:layout_gravity="center_horizontal"
+			android:padding="7dp"
+			android:textSize="20sp"
+			android:textColor="#1296db"
+			android:textStyle="bold"
+			android:text="写微博"/>
+
+		<EditText
+			android:id="@+id/app_write_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/edittext_shape"
+			android:gravity="top"
+			android:hint="说点什么吧"
+			android:maxLength="140"
+			android:minLines="6"
+			android:padding="10dp"
+			android:layout_margin="5dp"
+			android:textColorHint="#a6a5a5"
+			android:textSize="14sp"/>
+		<RelativeLayout
+			android:id="@+id/write_blog_lay"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:id="@+id/write_blog_clear"
+				android:layout_width="90dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:text="清空"/>
+			<TextView
+				android:text="添加图片"
+				android:textSize="20sp"
+				android:layout_marginRight="5dp"
+				android:gravity="center"
+				android:layout_alignTop="@id/app_write_img"
+				android:layout_alignBottom="@id/app_write_img"
+				android:id="@+id/write_blog_add_text"
+				android:layout_toLeftOf="@id/app_write_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<ImageView
+				android:layout_alignParentRight="true"
+				android:id="@+id/app_write_img"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="5dp"
+				android:src="@drawable/plus_128" />
+
+		</RelativeLayout>
+		<Button
+			android:id="@+id/app_write_submit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="保存"/>
+
+	</LinearLayout>
+</merge>

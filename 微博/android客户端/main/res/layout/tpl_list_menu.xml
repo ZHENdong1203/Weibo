@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="50dp"
+	android:paddingRight="10dp"
+	android:paddingTop="1dp"
+	android:paddingBottom="1dp"
+	android:gravity="center_vertical"
+	android:background="@drawable/xml_list_menu_bg"
+	android:focusable="false">
+	<ImageView
+		android:layout_width="35dp"
+		android:layout_height="35dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:src="@drawable/setting"/>
+	<TextView
+		android:id="@+id/tpl_list_menu_text_name"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginRight="5dp"
+		android:layout_marginLeft="5dp"
+		android:textSize="20sp"
+		android:gravity="center_vertical"
+		android:layout_weight="1"
+		android:focusable="false" />
+	<Button
+		android:layout_width="40dp"
+		android:layout_height="50dp"
+		android:layout_margin="5dp"
+		android:layout_alignParentRight="true"
+		android:background="@drawable/arrow_1"
+		android:focusable="false" />
+</LinearLayout>

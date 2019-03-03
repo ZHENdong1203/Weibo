@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:id="@+id/waveView_lay"
+		android:background="#FF3366">
+		<com.example.a85161.weibo.view.wave.WaveView
+			android:id="@+id/wave_view"
+			android:layout_width="match_parent"
+			android:layout_height="15dp"
+			android:layout_gravity="bottom" />
+		<ImageView
+			android:id="@+id/tpl_list_info_image_face"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:layout_gravity="bottom|center"
+			android:src="@drawable/face" />
+	</FrameLayout>
+	<TextView
+		android:id="@+id/tpl_list_info_text_top"
+		android:text="loading"
+		android:textSize="20sp"
+		android:layout_below="@id/waveView_lay"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<TextView
+		android:id="@+id/tpl_list_info_text_bottom"
+		android:text="loading"
+		android:textSize="20sp"
+		android:layout_centerHorizontal="true"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tpl_list_info_text_top"/>
+</RelativeLayout>

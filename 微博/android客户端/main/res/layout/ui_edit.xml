@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_layout" />
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="35dp"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center_horizontal"
+		android:padding="7dp"
+		android:textSize="17sp"
+		android:textColor="#1296db"
+		android:textStyle="bold"
+		android:text="编辑" />
+	<EditText
+		android:id="@+id/app_edit_text"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:singleLine="false"
+		android:lines="5"
+		android:layout_weight="1"
+		android:gravity="top"/>
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<Button
+			android:id="@+id/app_edit_submit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20sp"
+			android:text="@string/edit_submit">
+
+		</Button>
+	</LinearLayout>
+</LinearLayout>
+</merge>

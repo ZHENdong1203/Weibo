@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center_vertical|center_horizontal"
+	android:orientation="horizontal"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:visibility="gone"
+	android:id="@+id/main_load_bar"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.zyao89.view.zloading.ZLoadingView
+		android:layout_gravity="center_vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:z_type="DoubleCircleBuilder"
+		app:z_color="@color/colorAccent"/>
+</LinearLayout>

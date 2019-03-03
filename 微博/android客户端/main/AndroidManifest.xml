@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.a85161.weibo">
+
+    <uses-sdk tools:overrideLibrary="com.yzq.zxinglibrary"/>
+
+    <!-- For using network -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- For using notification -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- For using sdcard -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".base.BaseApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name">
+        <!-- Activity defines -->
+        <activity android:name=".frontActivity"
+            android:theme="@style/customLoading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.UiLogin"
+            android:theme="@style/com.example.a85161.weibo.theme.login">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiIndex"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiBlog"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiBlogs"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiConfig"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiEditText"
+            android:theme="@style/com.example.a85161.weibo.theme.light"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.app.demos.EDITTEXT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiEditBlog"
+            android:theme="@style/com.example.a85161.weibo.theme.light"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.app.demos.EDITBLOG" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UiSetFace"
+            android:theme="@style/com.example.a85161.weibo.theme.light"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo.DemoWeb"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demo.DemoMap"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".test.TestUi"
+            android:theme="@style/com.example.a85161.weibo.theme.light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WeatherDetail"/>
+        <activity android:name=".WeatherForecast"/>
+        <activity android:name=".aboutActivity"/>
+        <activity android:name=".codeActivity"/>
+        <activity android:name=".registerActivity"/>
+        <!-- Service defines -->
+        <service android:name=".service.NoticeService" android:label="Notification Service"/>
+    </application>
+
+</manifest>

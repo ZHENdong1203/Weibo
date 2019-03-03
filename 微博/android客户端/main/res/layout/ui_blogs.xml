@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/main_layout" />
+<LinearLayout 
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:id="@+id/my_blog_top"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center_horizontal"
+		android:padding="7dp"
+		android:textSize="20sp"
+		android:textColor="#1296db"
+		android:textStyle="bold"
+		android:text="我的微博"/>
+	<ScrollView 
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	    android:scrollbars="vertical"
+	    android:layout_weight="1"
+	    android:fillViewport="true">
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="55dp">
+				<ImageView 
+					android:id="@+id/app_blogs_image_face"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_margin="5dp"
+					android:src="@drawable/face" 
+					android:scaleType="fitXY"
+					android:focusable="false" />
+				<TextView
+					android:layout_toRightOf="@id/app_blogs_image_face"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_margin="5dp"
+					android:id="@+id/app_blogs_text_customer_name" 
+					android:textStyle="bold" 
+					android:text="name"
+					/>
+				<TextView
+					android:layout_below="@id/app_blogs_text_customer_name"
+					android:layout_toRightOf="@id/app_blogs_image_face"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_margin="5dp"
+					android:id="@+id/app_blogs_text_customer_info" 
+					android:text="info"
+					/>
+			</RelativeLayout>
+			<LinearLayout 
+				android:id="@+id/app_blogs_list_view" 
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:background="@drawable/body_1"
+				android:layout_gravity="center">
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<include layout="@layout/main_tab" />
+</LinearLayout>
+</merge>
